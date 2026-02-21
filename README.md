@@ -37,7 +37,3 @@ If the LLM call fails or the key is missing, the system falls back to `general` 
 - DB-level constraints are enforced via Django `CheckConstraint` in `backend/tickets/models.py`.
 - Stats endpoint uses ORM aggregation (`annotate` + `aggregate`) only.
 - Frontend debounces classification as the user types and lets them override suggestions.
-
-## Known Limitations
-
-- Commit history is not created here; add commits as needed.
